@@ -1,5 +1,5 @@
-# 📚 Sitelivros Vai na Web API
-
+# 📚 Site livros Vai na Web API
+ 
 Uma API desenvolvida em Python utilizando Flask e SQLite para gerenciar o cadastro e listagem de livros, conectando-se a um frontend. Esta API permite a doação de livros e exibe uma lista completa de títulos cadastrados. 🚀
 
 ## 📦 **Recursos**
@@ -17,15 +17,20 @@ Uma API desenvolvida em Python utilizando Flask e SQLite para gerenciar o cadast
     ```bash
     git clone [URL_DO_REPOSITORIO]
     ```
-2. Instale as dependências necessárias:
+ 2. Crie um Ambiente Virtual (obrigatório):
     ```bash
-    pip install flask
+    python -m venv venv
+    source venv/scripts/activate
     ```
-3. Inicie o servidor:
+3. Instale as dependências necessárias:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4. Inicie o servidor:
     ```bash
     python nome_do_arquivo.py
     ```
-4. Acesse a aplicação no navegador:
+5. Acesse a aplicação no navegador:
     ```
     http://127.0.0.1:5000/
     ```
