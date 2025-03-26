@@ -1,9 +1,11 @@
 from flask import Flask, request, jsonify  # Importamos a classe Flask do módulo flask para criar nossa aplicação web
+from flask_cors import CORS
 import sqlite3  # Importamos o módulo sqlite3 para manipulação do banco de dados SQLite
 
 # Criamos uma instância do Flask e armazenamos na variável "app"
 # O parâmetro __name__ indica que este arquivo será reconhecido como o principal da aplicação
 app = Flask(__name__)
+CORS(app)
 
 # Aqui estamos criando uma rota para o endpoint "/"
 # Ou seja, quando acessarmos http://127.0.0.1:5000/, a função abaixo será executada
